@@ -1,0 +1,163 @@
+{
+  "timestamp": "2026-06-22T18:10:53.075412",
+  "dataset": "CIC-IDS2017",
+  "dataset_stats": {
+    "total_flows": 2830743,
+    "n_benign": 80319,
+    "n_attack": 19681,
+    "n_features": 77,
+    "subsample_size": 100000,
+    "window_size": 50,
+    "window_step": 25
+  },
+  "model_comparison": {
+    "TDA + Random Forest": {
+      "auc": 1.0,
+      "f1": 0.994,
+      "precision": 0.994,
+      "recall": 0.994,
+      "train_time_min": 0.0,
+      "memory_mb": 145
+    },
+    "TDA + LSTM Hybrid": {
+      "auc": 1.0,
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "train_time_min": 1.4,
+      "memory_mb": 469
+    },
+    "LSTM": {
+      "auc": 1.0,
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "train_time_min": 1.6,
+      "memory_mb": 196
+    },
+    "Traditional SVM": {
+      "auc": 1.0,
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "train_time_min": 0.0,
+      "memory_mb": 89
+    },
+    "Isolation Forest": {
+      "auc": 0.983,
+      "f1": 0.835,
+      "precision": 0.879,
+      "recall": 0.795,
+      "train_time_min": 0.0,
+      "memory_mb": 67
+    }
+  },
+  "attack_type_results": {
+    "Benign": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "count": 642
+    },
+    "DoS/DDoS": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "count": 91
+    },
+    "PortScan": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "count": 58
+    },
+    "Brute Force": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "count": 6
+    },
+    "Bot/Infiltration": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "count": 1
+    }
+  },
+  "cross_validation": {
+    "fold_1": {
+      "auc": 1.0,
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "fold_2": {
+      "auc": 1.0,
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "fold_3": {
+      "auc": 1.0,
+      "f1": 0.997,
+      "precision": 0.994,
+      "recall": 1.0
+    },
+    "fold_4": {
+      "auc": 1.0,
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "fold_5": {
+      "auc": 1.0,
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "mean_auc": 1.0,
+    "std_auc": 0.0,
+    "mean_f1": 0.999,
+    "std_f1": 0.001,
+    "mean_precision": 0.999,
+    "std_precision": 0.003,
+    "mean_recall": 1.0,
+    "std_recall": 0.0
+  },
+  "statistical_tests": {
+    "TDA+LSTM vs LSTM": {
+      "p_value": 1.0,
+      "effect_size": 0.0,
+      "significant": "No"
+    },
+    "TDA+LSTM vs TDA+RF": {
+      "p_value": 0.47950012218695337,
+      "effect_size": 0.05012547061145729,
+      "significant": "No"
+    },
+    "TDA+LSTM vs SVM": {
+      "p_value": 1.0,
+      "effect_size": 0.0,
+      "significant": "No"
+    }
+  },
+  "feature_importance": {
+    "betti_0": {
+      "score": 0.5,
+      "contribution": 50.0
+    },
+    "betti_1": {
+      "score": 0.0,
+      "contribution": 0.0
+    },
+    "lstm": {
+      "score": 0.5,
+      "contribution": 50.0
+    }
+  },
+  "training_info": {
+    "final_val_acc": 100.0,
+    "best_val_acc": 100.0,
+    "convergence_epoch": 50
+  }
+}

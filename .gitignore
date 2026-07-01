@@ -1,0 +1,58 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+venv/
+.venv/
+*.egg
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Data (too large for GitHub — download separately)
+data/
+
+# Private / unnecessary files
+*.docx
+changes.md
+implementation_plan.md
+overleaf_upload/
+TDAF_Overleaf.zip
+TDAF_Revision_Notes.zip
+TDAF_Revision_Notes.tex
+TDAF.pdf
+ziEw0mqs
+hybridlstmtda*.pdf
+TDA\ AJDK*.tex
+
+# Duplicate/old figures (numbered variants)
+*1.png
+*2.png
+*3.png
+*4.png
+*5.png
+*6.png
+*7.png
+*8.png
+*9.png
+*10.png
+*11.png
+*12.png
